@@ -1,0 +1,20 @@
+{
+  "name": "remark-plugin-preserve-reference-character-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "author": {
+    "name": "Sosuke Suzuki",
+    "email": "aosukeke@gmail.com",
+    "url": "https://sosukesuzuki.dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "remark": "14.0.2",
+    "remark-parse": "10.0.1",
+    "remark-stringify": "10.0.2",
+    "unified": "10.1.1",
+    "remark-plugin-preserve-reference-characters": "file:../packages/remark-plugin"
+  }
+}
