@@ -1,0 +1,18 @@
+{
+  "name": "remark-plugin-preserve-reference-characters",
+  "version": "1.0.0",
+  "description": "Monorepo for remark-plugin-preserve-reference-characters",
+  "scripts": {},
+  "keywords": [],
+  "author": {
+    "name": "Sosuke Suzuki",
+    "email": "aosukeke@gmail.com",
+    "url": "https://sosukesuzuki.dev"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/remark-plugin",
+    "packages/mdast-util",
+    "packages/micromark-extension"
+  ]
+}
