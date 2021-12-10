@@ -2,17 +2,32 @@
   "name": "remark-plugin-preserve-reference-characters",
   "version": "1.0.0",
   "description": "Monorepo for remark-plugin-preserve-reference-characters",
-  "scripts": {},
   "keywords": [],
+  "license": "MIT",
   "author": {
     "name": "Sosuke Suzuki",
     "email": "aosukeke@gmail.com",
     "url": "https://sosukesuzuki.dev"
   },
-  "license": "MIT",
   "workspaces": [
     "packages/remark-plugin",
     "packages/mdast-util",
     "packages/micromark-extension"
-  ]
+  ],
+  "scripts": {
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint ./packages/**/src --ext .mjs",
+    "lint:tsc": "tsc --noEmit",
+    "lint:prettier": "prettier --check ./packages/**/src",
+    "fix": "run-s fix:*",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "prettier --write ./packages/**/src"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.3"
+  }
 }
