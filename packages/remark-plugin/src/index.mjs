@@ -2,9 +2,9 @@
  * @typedef {import('mdast').Root} Root
  */
 
-// @ts-expect-error
+// @ts-ignore
 import { preserveReferenceCharaceters } from "micromark-extension-preserve-reference-characters";
-// @ts-expect-error
+// @ts-ignore
 import { preserveReferenceCharacetersFromMarkdown } from "mdast-util-preserve-reference-characters";
 
 /** @type {import('unified').Plugin<void[], Root>} */
