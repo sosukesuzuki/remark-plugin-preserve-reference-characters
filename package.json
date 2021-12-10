@@ -21,7 +21,8 @@
     "lint:prettier": "prettier --check ./packages/**/src",
     "fix": "run-s fix:*",
     "fix:eslint": "npm run lint:eslint -- --fix",
-    "fix:prettier": "prettier --write ./packages/**/src"
+    "fix:prettier": "prettier --write ./packages/**/src",
+    "build": "npm run build --workspaces"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.6",
